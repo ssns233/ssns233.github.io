@@ -13,14 +13,25 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<style>
-		  /* Cat cursor */
+		  /* Normal cursor */
 		  html, body {
-		    cursor: url("images/test01.jpg") 0 0, auto;
+		    cursor: url("images/OIP.webp") 0 0, auto;  /* or test01.jpg */
 		  }
 		
-		  /* Optional: different cursor on clickable things */
+		  /* Hovering clickable things */
 		  a, button, .button, input, textarea, select, label {
 		    cursor: url("images/OIP2.webp") 0 0, pointer;
+		  }
+		
+		  /* While mouse button is pressed down anywhere */
+		  html:active, body:active {
+		    cursor: url("images/OIP2.webp") 0 0, auto; /* “clicked” cursor */
+		  }
+		
+		  /* While mouse button is pressed down on clickable things */
+		  a:active, button:active, .button:active,
+		  input:active, textarea:active, select:active, label:active {
+		    cursor: url("images/OIP.webp") 0 0, pointer; /* swap if you want */
 		  }
 		</style>
 	
